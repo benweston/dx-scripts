@@ -1,15 +1,19 @@
-# Assets
+![Ben Weston — Cloud & Software Engineering](banner.png)
 
-> Non-code resources used by the repository.   
+# `./assets/`
 
-## Purpose
+> Static assets, images, diagrams, and logos used throughout the `automation-scripts` repository documentation.   
 
-The `assets/` directory stores files that support the documentation or presentation of the project, such as:   
+## Contents
 
-- Repository banner images   
-- Diagrams or architecture visuals   
-- Screenshots   
-- Logos or icons   
-- Additional supporting media   
+- **Banners:** Header images used in READMEs (e.g., `banner.png`)   
+- **Diagrams:** Architecture diagrams generated from tools like Lucidchart   
+- **Screenshots:** Reference images for example outputs or console setups   
 
-These files are referenced by the main `README.md` and other documentation as needed.   
+## Referencing Images
+
+Use the relative path (i.e., like the root `README.md`):   
+
+```markdown
+![Project Banner](./assets/banner.png)
+```
