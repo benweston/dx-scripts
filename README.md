@@ -21,6 +21,6 @@
 <div align="justify">
 
 The `dx-scripts` repository contents are provided under the [MIT License](https://github.com/benweston/dx-scripts/blob/main/LICENSE).   
-Banner image taken from photo by <a href="https://unsplash.com/@choys_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Conny Schneider</a> on <a href="https://unsplash.com/photos/a-blue-background-with-lines-and-dots-xuTJZ7uD7PI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+Banner image taken from photo by [Conny Schneider](https://unsplash.com/@choys_) on [Unsplash](https://unsplash.com/photos/a-blue-background-with-lines-and-dots-xuTJZ7uD7PI) via the [Unsplash License](https://unsplash.com/license).   
 
 </div>
