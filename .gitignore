@@ -1,239 +1,121 @@
-########################################
-# MacOS
-########################################
+# ==============================================================================
+# Git Ignore Rules: cloud-sandbox
+# Standards: POSIX / Linux, Sublime Text, Direnv, Cloud & Local Secrets
+# ==============================================================================
 
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-*.icloud
+# ------------------------------------------------------------------------------
+# 1. Secrets, Credentials & Local Environment
+# ------------------------------------------------------------------------------
+# Environment configuration & Direnv
+.direnv/
+.envrc
+.env
+.env.*
+.env*.local
+*.env
+*.env.*
+env-variables.txt
 
-########################################
-# SSH
-########################################
+# Preserve public environment templates and examples
+!.env.example
+!.env.*.example
+!.envrc.example
 
-**/.ssh/id_rsa
-**/.ssh/id_ecdsa
-**/.ssh/id_ed25519
-**/.ssh/id_*.pub
+# SSH keys, configs & identity stores
+**/.ssh/id_*
+**/.ssh/*_id_*
 **/.ssh/known_hosts
+**/.ssh/config
+id_rsa*
+id_ecdsa*
+id_ed25519*
 
-########################################
-# Vim
-########################################
+# Certificates, private keys & cryptographic keystores
+*.pem
+*.key
+*.pkcs8
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.pub
 
-[._]*.sw[a-p]
-[._]s[a-rt-v][a-z]
-[._]ss[a-gi-z]
-*.un~
-Session.vim
-Sessionx.vim
-.netrwhist
-*~
-tags
+# GPG & Secret Keyrings
+secring.*
+*.gpg
+*.asc
 
-########################################
-# Zsh
-########################################
+# Cloud CLI credentials & tokens
+doctl/
+*.do_token
+.kube/config
 
-*.zwc
-*.zwc.old
-*zcompdump*
-.zsh_history
-.zsh_sessions
-.zcalc_history
-._zinit
-.zinit_lstupd
-zsdoc/data
-.directory_history
-/tests/_output/*
-!/tests/_output/.gitkeep
-
-########################################
-# Sublime Text
-########################################
-
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
+# ------------------------------------------------------------------------------
+# 2. Editor & IDE (Sublime Text)
+# ------------------------------------------------------------------------------
+# User workspace states (cursor locations, layout, active tabs)
 *.sublime-workspace
-sftp-config.json
-sftp-config-alt*.json
+
+# Project configuration (uncomment if project file is strictly private)
+*.sublime-project
+
+# Package Control runtime artifacts & certificate bundles
 Package Control.last-run
 Package Control.ca-list
 Package Control.ca-bundle
 Package Control.system-ca-bundle
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
 Package Control.cache/
+Package Control.ca-certs/
 oscrypto-ca-bundle.crt
+
+# Sublime cache, session data & sensitive plugin settings
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.cache
 bh_unicode_properties.cache
 GitHub.sublime-settings
+sftp-config.json
+sftp-config-alt*.json
 
-########################################
-# Python
-########################################
+# ------------------------------------------------------------------------------
+# 3. Operating System & Filesystem (Linux / POSIX)
+# ------------------------------------------------------------------------------
+# Editor recovery, lock files & auto-saves
+*~
+*.swp
+*.swo
+.#*
+\#*#
 
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Network & filesystem artifacts
+.fuse_hidden*
+.nfs*
 
-# C extensions
-*.so
+# Desktop environment metadata, thumbnails & trash
+.directory
+.Trash-*
+.thumbnails/
 
-# Distribution / packaging
-.Python
-build/
-dist/
-develop-eggs/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# Process dumps
+core
+core.*
+vgcore.*
 
-# PyInstaller
-#  Usually these files are written by PyInstaller 
-#  with options to build into one folder or one file.
-*.manifest
-*.spec
+# ------------------------------------------------------------------------------
+# 4. Local Runtime, Logs & Diagnostics
+# ------------------------------------------------------------------------------
+# Anchored ephemeral root directories (prevents matching nested source folders)
+/tmp/
+/temp/
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-pytest_cache/
-hypothesis/
-
-# Tests reports
-junit.xml
-coverage.xml
-
-# PyBuilder
-target/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv / poetry / uv
-Pipfile.lock
-poetry.lock
-poetry.toml
-.venv/
-# uv local environments
-.uv/
-
-# PDM
-.pdm.toml
-__pypackages__/
-
-# pyright / mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-.pyre/
-.pytype/
-
-# Ruff
-.ruff_cache/
-
-# pyproject-build backend artifacts
-*.pyz
-.pybuild/
-
-# Django stuff:
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask instances
-instance/
-.webassets-cache
-
-# Scrapy
-.scrapy/
-
-# Sphinx documentation
-docs/_build/
-
-# Virtual environments
-venv/
-env/
-venv.bak/
-env.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope
-.ropeproject
-
-# mkdocs documentation
-site/
-
-# PyCharm
-.idea/
-
-# dotenv
-.env
-.env.*
-!*.env.example
-
-# Local machine secrets
-secrets.json
-
-# Cloud provider creds
-*.pem
-*.p12
-*.key.json
-credentials.json
-
-########################################
-# General temp / build
-########################################
-
-tmp/
-temp/
-cache/
-logs/
+# Application runtime artifacts
 *.log
 *.tmp
-*.bak
-*.old
+*.out
+*.pid
+*.seed
+*.retry
