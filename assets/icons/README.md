@@ -1,6 +1,6 @@
 <a href="https://github.com/benweston/dx-scripts">
     <img
-        src="../assets/main-banner.png"
+        src="../assets/banners/main-banner.png"
         alt="Ben Weston - Cloud & Software Engineering"
         width="1100"
         height="150"
