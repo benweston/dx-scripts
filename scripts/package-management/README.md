@@ -20,7 +20,7 @@
 
 <div align="justify">
 
-Run the script with appropriate privileges (typically `root` or via `sudo`):
+Run the script with appropriate privileges (typically `root` or via `sudo`):   
 
 ```bash
 sudo ./<script-name>.sh
