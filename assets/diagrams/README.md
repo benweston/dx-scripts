@@ -8,10 +8,10 @@
     />
 </a>
 
-# `/assets`
+# `/diagrams`
 
 <div align="justify">
 
-> Repo assets.   
+> UML/ERD design files.   
 
 </div>

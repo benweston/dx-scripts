@@ -8,10 +8,10 @@
     />
 </a>
 
-# `/assets`
+# `/banners`
 
 <div align="justify">
 
-> Repo assets.   
+> Repo/profile banners.   
 
 </div>

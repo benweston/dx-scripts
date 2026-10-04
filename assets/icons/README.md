@@ -8,10 +8,10 @@
     />
 </a>
 
-# `/assets`
+# `/icons`
 
 <div align="justify">
 
-> Repo assets.   
+> Logos, badges.   
 
 </div>

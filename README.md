@@ -1,10 +1,10 @@
 <a href="https://github.com/benweston/dx-scripts">
     <img
-        src="./assets/banner.png"
-        alt="Infrastructure Helper Scripts"
+        src="./assets/main-banner.png"
+        alt="Ben Weston - Cloud & Software Engineering"
         width="1100"
-        height="130"
-        loading="eager"
+        height="150"
+        loading="lazy"
     />
 </a>
 

@@ -8,10 +8,10 @@
     />
 </a>
 
-# `/assets`
+# `/misc`
 
 <div align="justify">
 
-> Repo assets.   
+> Other static images.   
 
 </div>

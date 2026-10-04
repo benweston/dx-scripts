@@ -8,10 +8,10 @@
     />
 </a>
 
-# `/assets`
+# `/screenshots`
 
 <div align="justify">
 
-> Repo assets.   
+> UI/CLI screenshots.   
 
 </div>
