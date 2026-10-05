@@ -8,7 +8,7 @@
     />
 </a>
 
-# DX - Scripts
+# DX - `./scripts`
 
 <div align="justify">
 
